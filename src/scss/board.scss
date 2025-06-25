@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h3 {
+    font-size: 28px;
+}
+h5 {
+    margin-top: 40px;
+}
+.App pre {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.listgo {
+    border: 1px solid #14C6A4;
+    background-color: #fff;
+    color: #14c6a4;
+    margin-bottom: 20px;
+}
+.listgo:hover {
+    background-color: #14C6A4;
+    color: #fff;
+    border: none;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #e0fff8 !important;
+}
