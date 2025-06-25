@@ -7,7 +7,7 @@ import "../scss/board.scss";
 const Notice = () => {
     return (
         <>
-            <div className='mt-5 wrapbox'>
+            <div className='wrapbox'>
                 <Row>
                     <Col style={{ marginRight: '30px', width: '685px' }}>
                         <Tabs
