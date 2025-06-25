@@ -22,8 +22,8 @@ const Mainslide = () => {
     textAlign:'center'
    
   }}>
-         <h2>PARKET</h2>
-         <p>파켓으로 편하게 충전하고 주차하세요!</p>
+         <h1>PARKET</h1>
+         <h4>파켓으로 편하게 충전하고 주차하세요!</h4>
          <InputGroup className="mb-4">
             <Form.Control
                placeholder="search..."
@@ -31,7 +31,7 @@ const Mainslide = () => {
                aria-describedby="basic-addon2"
             />
             <Button variant="outline-secondary" id="button-addon2">
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
 search
 </span>
             </Button>

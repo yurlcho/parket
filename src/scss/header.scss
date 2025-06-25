@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.headernav{
+    background-color: rgb(248 249 250 / 81%);
+}
+
 .navbar-brand {
     img {
         width: 150px;
@@ -8,7 +12,7 @@
 }
 
 a.nav-link {
-        font-size: 16px;
-        color: #121212;
-        font-weight: 500;
+    font-size: 16px;
+    color: #121212;
+    font-weight: 500;
 }

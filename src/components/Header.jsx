@@ -5,7 +5,9 @@ import '../scss/header.scss';
 const Header = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar collapseOnSelect expand="lg"
+            fixed='top'
+            className="headernav" >
                 <Container>
                     <Navbar.Brand><img className="logo" src={process.env.PUBLIC_URL + "../img/logo.png"} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -69,7 +69,7 @@ const LiveParking = () => {
 
     return (
         <div className='LiveParking'>
-            <h3>실시간 주차 현황</h3>
+            <h2>실시간 주차 현황</h2>
 
             <div className="LpBtn">
                 <Button className={`LpBtn1 ${selectedType === '공용' ? 'active' : ''}`}
@@ -144,12 +144,12 @@ const LiveParking = () => {
                                             <div className="electricBox" style={{ backgroundColor: bgColor2 }}>
                                                 <div className="electricfont">
                                                     <p>급속</p>
-                                                    <h3 style={{ color: fontColor }}>{data.electric1}대 / 10대</h3>
+                                                    <h5 style={{ color: fontColor }}>{data.electric1}대 / 10대</h5>
                                                 </div>
 
                                                 <div className="electricfont">
                                                     <p>완속</p>
-                                                    <h3 style={{ color: fontColor }}>{data.electric2}대 / 10대</h3>
+                                                    <h5 style={{ color: fontColor }}>{data.electric2}대 / 10대</h5>
                                                 </div>
                                             </div>
                                         </div>
