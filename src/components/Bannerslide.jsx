@@ -11,7 +11,7 @@ const Bannerslide = () => {
     backgroundImage: ` url(${process.env.PUBLIC_URL}/img/banner1.png)`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '424px',
+    height: '250px',
 
   
    
@@ -23,7 +23,7 @@ const Bannerslide = () => {
     backgroundImage: ` url(${process.env.PUBLIC_URL}/img/banner2.png)`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '424px',
+    height: '250px',
 
   
    
@@ -31,10 +31,10 @@ const Bannerslide = () => {
        
       </Carousel.Item>
       <Carousel.Item style={{
-    backgroundImage: ` url(${process.env.PUBLIC_URL}/img/banner3.png)`,
+    backgroundImage: ` url(${process.env.PUBLIC_URL}/img/banner3.jpg)`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '424px',
+    height: '250px',
 
   
    
