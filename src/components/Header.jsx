@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import '../scss/header.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <Navbar collapseOnSelect expand="lg"
@@ -18,7 +21,7 @@ const Header = () => {
                             <Nav.Link >주차정산</Nav.Link>
                             <Nav.Link >이용내역</Nav.Link>
                             <Nav.Link >정기권 신청</Nav.Link>
-                            <Nav.Link >공지사항</Nav.Link>
+                            <Nav.Link onClick={()=>{navigate('/notice')}}>공지사항</Nav.Link>
                             <Nav.Link >로그인</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

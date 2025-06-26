@@ -170,9 +170,13 @@ margin: 80px auto;
 
             .bannerBox {
             background-color: $gray2;
-            width: 300px;
-            height: 300px;
-            margin: 0 auto;
+            width: 380px;
+            height: 380px;
+            margin-left: 30px;
+            background-image: url(../../public/img/광고.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
             }
         }
     }

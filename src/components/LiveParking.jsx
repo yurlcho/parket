@@ -72,7 +72,8 @@ const LiveParking = () => {
             <h2>실시간 주차 현황</h2>
 
             <div className="LpBtn">
-                <Button className={`LpBtn1 ${selectedType === '공용' ? 'active' : ''}`}
+                <Button 
+                className={`LpBtn1 ${selectedType === '공용' ? 'active' : ''}`}
                     onClick={() => setSelectedType('공용')}>
                     공용 주차장
                 </Button>

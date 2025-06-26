@@ -36,8 +36,8 @@ search
 </span>
             </Button>
          </InputGroup>
-            <Button className='MBTN' variant="outline-primary">실시간 충전예약</Button> 
-            <Button className='MBTN' variant="outline-primary"> 정기권 신청 </Button>
+            <Button className='MBTN' variant="outline-primary">정산 바로가기</Button> 
+            <Button className='MBTN' variant="outline-primary">정기권 조회</Button>
 
 </Container>
       </div>

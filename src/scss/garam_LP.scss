@@ -37,6 +37,10 @@
                 background-color: #14C6A4;
                 color: #fff;
             }
+
+            &:active{
+                border-color: #14C6A4 !important;
+            }
         }
 
         .LpBtn2 {
@@ -46,6 +50,10 @@
                 background-color: #FFA6DF;
                 color: #fff;
             }
+            
+            &:active{
+                border-color: #FFA6DF !important;
+            }
         }
 
         .LpBtn3 {
@@ -54,6 +62,10 @@
             &:hover {
                 background-color: #FFB301;
                 color: #fff;
+            }
+
+            &:active{
+                border-color: #FFB301 !important;
             }
         }
     }
