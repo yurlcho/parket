@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import "../scss/bannerslide.scss"
+import "../scss/Bannerslide.scss"
 import { Button } from 'react-bootstrap';
 
 const Bannerslide = () => {

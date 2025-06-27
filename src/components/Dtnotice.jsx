@@ -70,11 +70,11 @@ const Dtnotice = () => {
                     </Accordion>
 
                     <div className='btnbox'>
-                        <Button onClick={() => {
+                        <Button className='back' onClick={() => {
                             setPage(page - 1)
                         }} disabled={page === 1}>이전</Button>
                         <span> {page} </span>
-                        <Button onClick={() => {
+                        <Button className='next' onClick={() => {
                             setPage(page + 1)
                         }} disabled={page === lastPage}>다음</Button>
                     </div>
