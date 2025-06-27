@@ -2,31 +2,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-h3 {
-    font-size: 28px;
-}
-h5 {
-    margin-top: 40px;
-}
-.App pre {
-    font-family: "Noto Sans KR", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 14px;
-    margin-top: -10px;
+.tablebox {
+    color: #121212;
+
+    th {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    td {
+        font-size: 15px;
+
+        &:hover {
+            color: #14C6A4 !important;
+        }
+    }
+
+    .datetd {
+        color: #333 !important;
+
+        &:hover {
+            color: #333 !important;
+        }
+    }
 }
 
-.listgo {
-    border: 1px solid #14C6A4;
-    background-color: #fff;
-    color: #14c6a4;
-    margin-bottom: 20px;
-}
-.listgo:hover {
-    background-color: #14C6A4;
-    color: #fff;
-    border: none;
+.table>:not(caption)>*>* {
+    padding: 5.5px 2px !important;
+    color: #121212 !important;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.table-hover tbody tr:hover td {
-  background-color: #e0fff8 !important;
+.tbbtnbox {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        background-color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 4px 4px 8px;
+        color: #666;
+        display: flex;
+        align-items: center;
+
+        p {
+            display: flex;
+            // align-items: center;
+            vertical-align: middle;
+
+            .material-icons {
+                width: 20px;
+                height: 20px;
+                margin-top: 1px;
+            }
+
+            &:hover {
+                color: #333;
+                border-bottom: 1px solid #333;
+            }
+        }
+    }
 }

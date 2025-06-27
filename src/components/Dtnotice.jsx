@@ -2,15 +2,38 @@ import React, { useEffect, useState } from 'react'
 import "../scss/dtnotice.scss"
 import { Accordion, Button } from 'react-bootstrap'
 import noticeData from '../data/noticeData';
+import { useLocation } from 'react-router-dom';
 
 const Dtnotice = () => {
     const [page, setPage] = useState(1);
     const [lastPage, setLastPage] = useState(1);
     let [notice] = useState(noticeData);
 
+    const location = useLocation();
+    const openId = location.state?.openId || null;
+
+    const openIndex = notice.findIndex(n => n.id === openId);
+
+
     useEffect(() => {
-        setLastPage(Math.ceil(notice.length / 7));
-    }, [notice])
+        if (notice.length) {
+            setLastPage(Math.ceil(notice.length / 7));
+        }
+        if (openId !== null && openIndex !== -1) {
+            const targetPage = Math.floor(openIndex / 7) + 1;
+            setPage(targetPage);
+        }
+    }, [notice, openId]);
+
+    const startIndex = (page - 1) * 7;
+    const endIndex = page * 7;
+    const currentPageNotices = notice.slice(startIndex, endIndex);
+
+    const defaultOpenKey =
+    openIndex >= startIndex && openIndex < endIndex
+    ? (openIndex % 7).toString()
+    : null;
+
 
     return (
         <>
@@ -34,7 +57,7 @@ const Dtnotice = () => {
                 {/* 아코디언 */}
                 <div className="noticedetail">
                     <h2 className='noticename'>공지사항</h2>
-                    <Accordion>
+                    <Accordion defaultActiveKey={defaultOpenKey}>
                         {notice.slice((page - 1) * 7, page * 7).map((item, i) => (
                             <Accordion.Item eventKey={i.toString()} key={item.id}>
                                 <Accordion.Header><p><span>{item.title}</span>{item.date}</p></Accordion.Header>

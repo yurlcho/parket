@@ -1,6 +1,6 @@
 let noticedata = [
     {
-        id: 0,
+        id: 1,
         title: "환불 기간 및 수수료 관련 안내",
         date: '2025-06-24',
         content: `
@@ -22,7 +22,7 @@ let noticedata = [
 `
     },
     {
-        id: 1,
+        id: 2,
         title: "정기권 결제 포인트 사용법",
         date: '2025-06-18',
         content: `
@@ -51,7 +51,7 @@ let noticedata = [
 `
     },
     {
-        id: 2,
+        id: 3,
         title: "포인트 환불 관련",
         date: '2025-05-22',
         content: `
@@ -78,7 +78,7 @@ let noticedata = [
 `
     },
     {
-        id: 3,
+        id: 4,
         title: "조회 오류 점검",
         date: '2025-05-19',
         content: `
@@ -100,7 +100,7 @@ let noticedata = [
 `
     },
     {
-        id: 4,
+        id: 5,
         title: "[공지] 5월 정기점검 안내",
         date: '2025-05-10',
         content: `
@@ -113,7 +113,7 @@ let noticedata = [
 `
     },
     {
-        id: 5,
+        id: 6,
         title: "[안내] 5월 주차권 신청 마감일 안내",
         date: '2025-05-01',
         content: `
@@ -123,7 +123,7 @@ let noticedata = [
 `
     },
     {
-        id: 6,
+        id: 7,
         title: "카드 결제 오류 발새 안내",
         date: '2025-04-27',
         content: `
@@ -136,7 +136,7 @@ let noticedata = [
 `
     },
     {
-        id: 7,
+        id: 8,
         title: "주차요금 모바일 간편결제 도입",
         date: '2025-04-20',
         content: `
@@ -146,7 +146,7 @@ let noticedata = [
 `
     },
     {
-        id: 8,
+        id: 9,
         title: "주차장 출입구 공사 예정 안내",
         date: '2025-04-11',
         content: `
@@ -162,7 +162,7 @@ let noticedata = [
     },
 
     {
-        id: 9,
+        id: 10,
         title: "이용약관 개정 사전 안내",
         date: '2025-03-15',
         content: `
@@ -178,7 +178,7 @@ let noticedata = [
 `
     },
     {
-        id: 10,
+        id: 11,
         title: "[이벤트] 파켓페이 등록하고 3,000P 받자!",
         date: '2025-02-28',
         content: `
@@ -209,7 +209,7 @@ let noticedata = [
 `
     },
     {
-        id: 11,
+        id: 12,
         title: "[신규 서비스] 파켓페이(ParketPay) 출시 안내",
         date: '2025-02-27',
         content: `
@@ -239,7 +239,7 @@ let noticedata = [
 `
     },
     {
-        id: 12,
+        id: 13,
         title: "[이벤트] 정기권 등록 시 추가 5일 무료!",
         date: '2025-02-15',
         content: `
@@ -269,7 +269,7 @@ let noticedata = [
 `
     },
     {
-        id: 13,
+        id: 14,
         title: "[이벤트] 신규 회원가입 시 2,000포인트 즉시 지급!",
         date: '2025-01-30',
         content: `
