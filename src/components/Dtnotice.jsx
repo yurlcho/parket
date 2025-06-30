@@ -39,7 +39,7 @@ const Dtnotice = () => {
         <>
             <div className="headerbox"></div>
             <div className="minibanner">
-                <img src={process.env.PUBLIC_URL + "../img/minibanner.jpg"} alt="minibanenr" />
+                <img src={process.env.PUBLIC_URL + "/img/minibanner.jpg"} alt="minibanenr" />
             </div>
 
             <div className="dtnoticewrap">

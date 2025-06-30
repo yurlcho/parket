@@ -10,6 +10,7 @@ import LpData2 from './data/Lp_data2';
 import UsageDetails from './components/UsageDetails';
 import { useState } from 'react';
 import LpData from './data/Lp_data';
+import PaymentDetail from './components/PaymentDetail';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Main />}/>
-        <Route path='/payment' element={<Dtnotice />}/>
+        <Route path='/payment' element={<PaymentDetail />}/>
         <Route path='/usage' element={<Usage />}/>
         <Route path='/usage/details/:id' element={<UsageDetails />}/>
         <Route path='/commuterpass' element={<CommuterPass LpData2={LpData2}/>}/>

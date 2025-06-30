@@ -26,7 +26,7 @@ const Notice = () => {
                         <div className="number">
                             <div className="callbox">
                                 <div className="call">
-                                    <img src={process.env.PUBLIC_URL + "../img/call.png"} alt="d" />
+                                    <img src={process.env.PUBLIC_URL + "/img/call.png"} alt="d" />
                                     <h3>전화문의</h3>
                                 </div>
                                 <h2><span>파켓 대표전화</span> 031-123-4567</h2>
@@ -37,11 +37,11 @@ const Notice = () => {
                             </div>
                             <div className="kakaobox">
                                 <div className="kakao">
-                                    <img src={process.env.PUBLIC_URL + "../img/kakao.png"} alt="k" />
+                                    <img src={process.env.PUBLIC_URL + "/img/kakao.png"} alt="k" />
                                     <h3>카톡문의</h3>
                                 </div>
                                 <div className="ch">
-                                    <img src={process.env.PUBLIC_URL + "../img/ch.png"} alt="k" /> <p>카카오톡 : Parket</p>
+                                    <img src={process.env.PUBLIC_URL + "/img/ch.png"} alt="k" /> <p>카카오톡 : Parket</p>
                                 </div>
                                 <p><span>INSTAGRAM</span> @parket_kr <br />
                                     <span>네이버 블로그</span> parket <br />

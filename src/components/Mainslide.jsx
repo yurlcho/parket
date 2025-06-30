@@ -1,5 +1,5 @@
 import React from 'react'
-import "../scss/Mainslide.scss"
+import "../scss/mainslide.scss"
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';

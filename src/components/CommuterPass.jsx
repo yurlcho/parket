@@ -70,7 +70,7 @@ export default function CommuterPass(props) {
   }
 
   return (
-    <div className='CommuterPass' style={{ paddingTop: '60px' }}>
+    <div className='CommuterPass' style={{ paddingTop: '75px' }}>
       <div className='minbanner'>
         <img src={process.env.PUBLIC_URL + "/img/minibanner.jpg"} alt="미니배너" />
       </div>
@@ -94,7 +94,6 @@ export default function CommuterPass(props) {
           <div className="BTNG">
             <InputGroup>
               <Form.Control
-                placeholder="search..."
                 aria-label="검색어 입력"
                 aria-describedby="basic-addon2"
                 value={searchText}
@@ -107,6 +106,7 @@ export default function CommuterPass(props) {
                 <span className="material-symbols-outlined">search</span>
               </Button>
             </InputGroup>
+            
             <Form.Select
               aria-label="검색 유형 선택"
               className="custom-select"

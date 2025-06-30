@@ -5,7 +5,7 @@ import LpData from '../data/Lp_data'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Usage = () => {
-    const [usageData, setUsageData] = useState(LpData);
+    const [usageData] = useState(LpData);
     const navigate = useNavigate();
 
     return (
@@ -27,19 +27,18 @@ const Usage = () => {
                         </Link>
                     </div>
 
-                    <div className="usageMenu3">
+                    <div className="usageMenu5">
                         <Link to={Link} as={'/usage'} style={{ textDecoration: 'none' }}>
                             <p>이용상세내역</p>
                         </Link>
                     </div>
 
-                    <div className="usageMenu4"></div>
                 </div>
 
                 <div className="contentBoxWrap">
                     <h2>이용내역 조회</h2>
 
-                    <InputGroup style={{marginBottom: '13px'}}> 
+                    <InputGroup style={{ marginBottom: '13px' }}>
                         <Form.Control
                             placeholder="주차장 이름을 입력하세요."
                             aria-label="주차장 이름"
@@ -69,6 +68,7 @@ const Usage = () => {
                                         .slice()
                                         .sort((a, b) => b.num - a.num)
                                         .map((item) =>
+
                                             <tr key={item.num}>
                                                 <td style={{ color: '#333' }}>
                                                     {item.num}
@@ -83,7 +83,7 @@ const Usage = () => {
                                                 </td>
 
                                                 <td>
-                                                    {item.amount.toLocaleString()}원
+                                                    {item.amount?.toLocaleString() ?? '0'}원
                                                 </td>
                                             </tr>
                                         )
